@@ -15,15 +15,15 @@
     </nav>
     <div class="container searchContainer">
         <form action="/data" method="post">
-        <div class="search card card-body">
-            <p class="lead">Enter the Github username</p>
-            <input name="username" type="text" id="searchUser" class="form-control" placeholder="Enter GitHub Username...." required>
-        <br>
-            <p class="lead">Enter repos name</p>
-            <input name="reponame" type="text" id="searchUser" class="form-control" placeholder="Enter GitHub Username...." required>
-        <br>
-            <input type="Submit" value="Search">
-        </div>
+            <div class="search card card-body">
+                <p class="lead">Enter the Github username</p>
+                <input name="username" type="text" id="searchUser" class="form-control" placeholder="Enter GitHub Username...." required>
+            <br>
+                <p class="lead">Enter repos name</p>
+                <input name="reponame" type="text" id="searchUser" class="form-control" placeholder="Enter GitHub Username...." required>
+            <br>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
         </form>
         <div id="profile">
                 <h1>{{name}}</h1>

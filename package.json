@@ -4,6 +4,7 @@
   "description": "just a small project to track git history of a project",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

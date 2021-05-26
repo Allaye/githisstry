@@ -17,9 +17,8 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/data', (req, res)=>{
-    if(req.body){
-        console.log('yeahhh')
-    }
+    res.json(req)
+    console.log(req)
 })
 
 
