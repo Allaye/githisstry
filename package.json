@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Allaye/githisstry#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "node-fetch": "^2.6.1"
