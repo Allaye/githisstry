@@ -1,5 +1,6 @@
 const path = require('path')
 const express = require('express')
+const get_commit_info = require('./commits')
 
 
 const app = express()
@@ -15,8 +16,10 @@ app.get('/', (req, res)=>{
     res.render('home', {name:'kola'})
 })
 
-app.get('/data', (req, res)=>{
-    res.send(req.body.username)
+app.post('/data', (req, res)=>{
+    if(req.body){
+        console.log('yeahhh')
+    }
 })
 
 
