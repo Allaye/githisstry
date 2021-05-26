@@ -1,0 +1,30 @@
+{
+  "name": "githisstry",
+  "version": "1.0.0",
+  "description": "just a small project to track git history of a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allaye/githisstry.git"
+  },
+  "keywords": [
+    "githisstry"
+  ],
+  "author": "Allaye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allaye/githisstry/issues"
+  },
+  "homepage": "https://github.com/Allaye/githisstry#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
