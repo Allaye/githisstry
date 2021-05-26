@@ -17,13 +17,11 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/', async (req, res)=>{
-    if(req.body.username){
-        let data = await get_commit_info(req.body.username, req.body.reponame)
-        data = await data
-        res.json(data)
-        //return res.render('home')
-    }
-    console.log('no data')
+    res.json(get_commit_info(req.body.username, req.body.reponame))
+    let a = await get_commit_info(req.body.username, req.body.reponame)
+    let b = await a 
+    console.log(b)
+
 })
 
 
