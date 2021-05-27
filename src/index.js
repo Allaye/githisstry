@@ -1,7 +1,6 @@
 const path = require('path')
 const express = require('express')
 const get_commit_info = require('./commits')
-const fetch = require('node-fetch')
 
 
 const app = express()
@@ -17,6 +16,11 @@ app.get('/', (req, res)=>{
     res.render('home', {name:'data'})
 })
 
+app.get('/data', (req, res)=>{
+    res.redirect('/')
+})
+
+
 app.post('/data', async (req, res)=>{
     if(req.body.username){
         const promise = await get_commit_info(req.body.username, req.body.reponame)
@@ -30,5 +34,5 @@ app.post('/data', async (req, res)=>{
 const port = process.env.PORT || 3000;
 
 app.listen(port, ()=>{
-    console.log(`server running on port ${port}`)
+    console.log(`server running... connected on port ${port}`)
 })
