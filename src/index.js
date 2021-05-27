@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 
 
 app.get('/', (req, res)=>{
-    res.render('home', {name:'data'})
+    res.render('home')
 })
 
 app.get('/data', (req, res)=>{
@@ -27,7 +27,7 @@ app.post('/data', async (req, res)=>{
         const data = await promise.json()
         return res.render('info', {data: data})
     }
-    return res.render('home', {name:'data'})
+    return res.render('home')
 })
 
 
