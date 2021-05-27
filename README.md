@@ -3,14 +3,14 @@ just a small tool to track git commit history of a project, it shows the commite
 
 ## How to install and use
 
-<p>Install node if you dont have it already installed, go to<a href="https://nodejs.org/en/download/">Node installation documentation</a></p>
+<p>Install node if you dont have it already installed, go to <a href="https://nodejs.org/en/download/">Node installation documentation</a></p>
 <p>
 
 Clone the repo or download the repo
 
 ## Build Setup
 
-# make sure you are in the project directory
+make sure you are in the project directory
 
 # install dependencies
 run <b>npm run install</b> command
@@ -19,6 +19,8 @@ run <b>npm run install</b> command
 run <b>npm run dev</b> command
 
 # using the frontend
+go the any browser and type http://localhost:3000/ and run it
+
 The tool can be use to get commit info on any public repo
 
 input the username of the repo(owner username) e.g google
