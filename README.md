@@ -13,7 +13,7 @@ Clone the repo or download the repo
 make sure you are in the project directory
 
 # install dependencies
-run <b>npm run install</b> command
+run <b>npm install</b> command
 
 # serve with hot reload at localhost:3000
 run <b>npm run dev</b> command
