@@ -26,7 +26,13 @@
             </div>
         </form>
         <div id="profile">
-        
+            <% if (data[0]) { %>
+                <% for( index in data) { %>
+                    <h1><%=index%></h1>
+                <% } %>
+            <% } else { %>
+                <h1>hey you</h1>
+            <% } %>
         </div>
         
 

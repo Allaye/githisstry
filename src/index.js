@@ -14,15 +14,16 @@ app.use(express.urlencoded({ extended: true }))
 
 
 app.get('/', (req, res)=>{
-    res.render('home', {name:'kola'})
+    res.render('home', {name:'data'})
 })
 
-app.post('/', async (req, res)=>{
+app.post('/data', async (req, res)=>{
     if(req.body.username){
         const promise = await get_commit_info(req.body.username, req.body.reponame)
         const data = await promise.json()
-        res.render('home', data)
+        return res.render('info', {data: data})
     }
+    return res.render('home', {name:'data'})
 })
 
 
