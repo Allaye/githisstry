@@ -18,7 +18,7 @@ run <b>npm run install</b> command
 # serve with hot reload at localhost:3000
 run <b>npm run dev</b> command
 
-# using the frontend
+# using the frontend tool
 go the any browser and type http://localhost:3000/ and run it
 
 The tool can be use to get commit info on any public repo
@@ -29,7 +29,7 @@ input the repo name e.g googletest
 
 the results will show below the form, currently no pagination implemented, so you have to scroll down to get all info
 
-# error when search for data 
+# error when searching for data 
 
 when you get the 404 error, it means the username or repo name you provided are wrong
 
